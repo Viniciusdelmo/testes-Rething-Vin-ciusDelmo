@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>Formulário Inscrição - Detran</title>
+</head>
+<body>
+  <div Class = "container" id="formulario">
+    <h2>Faça seu Cadastro</h2>
+    <form action="#" method="get" id="formularioCadastro">
+      <p class="formulario-cadastro">
+        <label for="nome">Nome</label><br>
+        <input class="dados-formulario" id="nomePessoa"  type="text" required="required" name="text" placeholder="Insira seu nome completo">
+      </p>
+
+      <p class="formulario-cadastro">
+        <label for="idade">Idade</label><br>
+        <input class="dados-formulario" id="idadePessoa" type="number" required="required" name="numbers" placeholder="Insira sua idade. Ex: 23">
+      </p>
+
+      <p class="formulario-cadastro">
+        <label for="profissao">Profissão</label><br>
+        <input class="dados-formulario" id="profissaoPessoa" type="text" required="required" id="tel" name="tel" placeholder="Insira sua profissão">
+      </p>
+
+      <p class="formulario-cadastro">
+        <label for="email">Email</label><br>
+        <input class="dados-formulario" id="emailPessoa" type="email" required="required" name="tel" placeholder="Insira seu email">
+      </p>
+
+      <p class="formulario-cadastro">
+        <label for="telefone">Telefone</label><br>
+        <input class="dados-formulario" id="telefonePessoa" type="tel" required="required" maxlength="15" placeholder="Insira seu telefone. Ex: (00)00000-0000">
+      </p>
+
+      <p class="formulario-cadastro">
+        <label for="dataPreenchimento">Data de preenchimento</label><br>
+        <input class="dados-formulario" id="dataPreenchimento" type="date" required="required" maxlength="10" name="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" placeholder="">
+      </p>
+      
+      <p class="formulario-cadastro">
+        <button id="enviar" type="submit">ENVIAR</button>
+
+        
+      </p>
+
+    </form>
+   
+  </div>
+  <div Class = "container" id="infCadastradas">
+    <h2>Informações Cadastradas</h2>
+      <p class="formulario-cadastro">
+      Nome:<span id="valorNome">
+      </span><br>
+      <p class="formulario-cadastro">
+      Idade:<span id="valorIdade">
+      </span><br>
+      <p class="formulario-cadastro">
+      Profissão:<span id="valorProfissao">
+      </span><br>
+      <p class="formulario-cadastro">
+      Email:<span id="valorEmail">
+        </span><br>
+      <p class="formulario-cadastro">
+      Telefone:<span id="valorTelefone">
+        </span><br>
+      <p class="formulario-cadastro">
+      Data de preenchimento:<span id="valorDataPreenchimento">
+        </span><br>
+   
+   
+  </div>
+  
+  <script src="teste1.js"></script>
+</body>
+</html>
